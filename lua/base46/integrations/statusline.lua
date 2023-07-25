@@ -203,6 +203,12 @@ M.minimal = {
     bg = colors.black,
   },
 
+  St_gitIcons = {
+    fg = generate_color(light_grey, 8),
+    bg = colors.black,
+    bold = true,
+  },
+
   -- LSP
   St_lspError = {
     fg = colors.red,
