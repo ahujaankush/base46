@@ -332,8 +332,9 @@ local function gen_hl(name, col)
 end
 
 gen_hl("file", "red")
-gen_hl("Pos", "yellow")
-gen_hl("cwd", "orange")
-gen_hl("lsp", "green")
+
+gen_hl("lsp", "purple")
+gen_hl("cwd", "cyan")
+gen_hl("Pos", "green")
 
 return M[statusline_theme]
