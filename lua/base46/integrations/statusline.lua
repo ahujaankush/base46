@@ -333,8 +333,8 @@ end
 
 gen_hl("file", "red")
 
-gen_hl("lsp", "purple")
-gen_hl("cwd", "cyan")
-gen_hl("Pos", "green")
+gen_hl("lsp", "cyan")
+gen_hl("cwd", "green")
+gen_hl("Pos", "yellow")
 
 return M[statusline_theme]
