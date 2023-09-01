@@ -1,172 +1,278 @@
 local colors = require("base46").get_theme_tb "base_30"
 
 return {
-
+  BufferLineFill = {
+    bg = colors.black2,
+  },
   BufferLineBackground = {
-    fg = colors.light_grey,
     bg = colors.black2,
   },
-
-  BufferlineIndicatorVisible = {
+  BufferLineTab = {
+    fg = colors.white,
+    bg = colors.one_bg2,
+  },
+  BufferLineTabSelected = {
+    fg = colors.black,
+    bg = colors.green,
+    bold = true,
+  },
+  BufferLineTabSeparator = {
+    fg = colors.one_bg2,
+    bg = colors.one_bg2,
+  },
+  BufferLineTabSeparatorSelected = {
+    fg = colors.green,
+    bg = colors.green,
+  },
+  BufferLineTabClose = {
     fg = colors.black2,
-    bg = colors.black2,
+    bg = colors.red,
   },
-
-  -- numbers
-  BufferLineNumbers = {
+  BufferLineCloseButton = {
     fg = colors.grey_fg,
     bg = colors.black2,
   },
-
-  BufferLineNumbersVisible = {
+  BufferLineCloseButtonVisible = {
     fg = colors.grey_fg,
     bg = colors.black2,
   },
-
-  BufferLineNumbersSelected = {
-    fg = colors.light_grey,
+  BufferLineCloseButtonSelected = {
+    fg = colors.baby_pink,
     bg = colors.black,
-    bold = false,
-    italic = false,
   },
-
-  -- buffers
+  BufferLineBufferVisible = {
+    fg = colors.light_grey,
+    bg = colors.black2,
+  },
   BufferLineBufferSelected = {
     fg = colors.white,
     bg = colors.black,
     bold = true,
     italic = false,
   },
-
-  BufferLineBufferVisible = {
-    fg = colors.light_grey,
+  BufferLineNumbers = {
+    fg = colors.grey_fg,
     bg = colors.black2,
   },
-
-  -- for diagnostics = "nvim_lsp"
+  BufferLineNumbersVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineNumbersSelected = {
+    fg = colors.light_grey,
+    bg = colors.black,
+    bold = false,
+    italic = false,
+  },
+  BufferLineDiagnostic = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineDiagnosticVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineDiagnosticSelected = {
+    fg = colors.light_grey,
+    bg = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineHint = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineHintVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineHintSelected = {
+    fg = colors.purple,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineHintDiagnostic = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineHintDiagnosticVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineHintDiagnosticSelected = {
+    fg = colors.purple,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineInfo = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineInfoVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineInfoSelected = {
+    fg = colors.purple,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineInfoDiagnostic = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineInfoDiagnosticVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineInfoDiagnosticSelected = {
+    fg = colors.purple,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineWarning = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineWarningVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineWarningSelected = {
+    fg = colors.sun,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
+  BufferLineWarningDiagnostic = {
+    fg = colors.grey_fg,
+    sp = colors.black2,
+    bg = colors.black2,
+  },
+  BufferLineWarningDiagnosticVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineWarningDiagnosticSelected = {
+    fg = colors.sun,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
   BufferLineError = {
-    fg = colors.light_grey,
+    fg = colors.grey_fg,
+    sp = colors.black2,
     bg = colors.black2,
   },
-
+  BufferLineErrorVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+  BufferLineErrorSelected = {
+    fg = colors.red,
+    bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
+  },
   BufferLineErrorDiagnostic = {
     fg = colors.grey_fg,
+    sp = colors.black2,
     bg = colors.black2,
   },
-
-  -- close buttons
-  BufferLineCloseButton = {
+  BufferLineErrorDiagnosticVisible = {
     fg = colors.grey_fg,
     bg = colors.black2,
   },
-
-  BufferLineCloseButtonVisible = {
-    fg = colors.grey_fg,
-    bg = colors.black2,
-  },
-
-  BufferLineCloseButtonSelected = {
-    fg = colors.baby_pink,
+  BufferLineErrorDiagnosticSelected = {
+    fg = colors.red,
     bg = colors.black,
+    sp = colors.black,
+    bold = true,
+    italic = false,
   },
-
-  BufferLineFill = {
-    bg = colors.black2,
-  },
-
-  BufferlineIndicatorSelected = {
-    fg = colors.blue,
-    bg = colors.black,
-  },
-
-  -- modified
   BufferLineModified = {
-    fg = colors.red,
+    fg = colors.purple,
     bg = colors.black2,
   },
-
   BufferLineModifiedVisible = {
-    fg = colors.red,
+    fg = colors.purple,
     bg = colors.black2,
   },
-
   BufferLineModifiedSelected = {
-    fg = colors.green,
+    fg = colors.dark_purple,
     bg = colors.black,
   },
-
-  -- separators
-  BufferLineSeparator = {
+  -- duplicate_selected = {
+  --   fg = "<colour-value-here>",
+  --   bg = "<colour-value-here>",
+  --   italic = true,
+  -- },
+  -- duplicate_visible = {
+  --   fg = "<colour-value-here>",
+  --   bg = "<colour-value-here>",
+  --   italic = true,
+  -- },
+  -- duplicate = {
+  --   fg = "<colour-value-here>",
+  --   bg = "<colour-value-here>",
+  --   italic = true,
+  -- },
+  BufferLineSeparatorSelected = {
     fg = colors.black2,
-    bg = colors.black2,
+    bg = colors.black,
   },
-
   BufferLineSeparatorVisible = {
     fg = colors.black2,
     bg = colors.black2,
   },
-
-  BufferLineSeparatorSelected = {
+  BufferLineSeparator = {
     fg = colors.black2,
     bg = colors.black2,
   },
-
-  -- tabs
-  BufferLineTab = {
-    fg = colors.white,
-    bg = colors.one_bg2,
+  BufferLineIndicatorVisible = {
+    fg = colors.red,
+    bg = colors.black2,
   },
-
-  BufferLineTabSelected = {
-    fg = colors.black,
-    bg = colors.green,
+  BufferLineIndicatorSelected = {
+    fg = colors.dark_purple,
+    bg = colors.black,
+  },
+  BufferLinePickSelected = {
+    fg = colors.sun,
+    bg = colors.black,
     bold = true,
+    italic = true,
   },
-
-  BufferLineTabClose = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-
-  BufferLineTabSeparator = {
-    fg = colors.one_bg2,
-    bg = colors.one_bg2,
-  },
-
-  BufferLineTabSeparatorSelected = {
-    fg = colors.green,
-    bg = colors.green,
-  },
-
-  BufferLineDevIconDefaultSelected = {
-    bg = "none",
-  },
-
-  BufferLineDevIconDefaultInactive = {
-    bg = "none",
-  },
-
-  BufferLineDuplicate = {
-    fg = "NONE",
+  BufferLinePickVisible = {
+    fg = colors.sun,
     bg = colors.black2,
+    bold = false,
+    italic = true,
   },
-
-  BufferLineDuplicateSelected = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-
-  BufferLineDuplicateVisible = {
-    fg = colors.blue,
+  BufferLinePick = {
+    fg = colors.sun,
     bg = colors.black2,
+    bold = false,
+    italic = true,
   },
-
-  -- custom area
-  BufferLineRightCustomAreaText1 = {
-    fg = colors.white,
-  },
-
-  BufferLineRightCustomAreaText2 = {
-    fg = colors.red,
+  BufferLineOffsetSeparator = {
+    fg = colors.darker_black,
+    bg = colors.darker_black,
   },
 }
