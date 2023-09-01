@@ -12,10 +12,30 @@ return {
     bg = colors.black2,
   },
 
+  -- numbers
+  BufferLineNumbers = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+
+  BufferLineNumbersVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+
+  BufferLineNumbersSelected = {
+    fg = colors.light_grey,
+    bg = colors.black,
+    bold = false,
+    italic = false,
+  },
+
   -- buffers
   BufferLineBufferSelected = {
     fg = colors.white,
     bg = colors.black,
+    bold = true,
+    italic = false,
   },
 
   BufferLineBufferVisible = {
@@ -28,30 +48,34 @@ return {
     fg = colors.light_grey,
     bg = colors.black2,
   },
+
   BufferLineErrorDiagnostic = {
-    fg = colors.light_grey,
+    fg = colors.grey_fg,
     bg = colors.black2,
   },
 
   -- close buttons
   BufferLineCloseButton = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-  BufferLineCloseButtonVisible = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-  BufferLineCloseButtonSelected = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-  BufferLineFill = {
     fg = colors.grey_fg,
     bg = colors.black2,
   },
+
+  BufferLineCloseButtonVisible = {
+    fg = colors.grey_fg,
+    bg = colors.black2,
+  },
+
+  BufferLineCloseButtonSelected = {
+    fg = colors.baby_pink,
+    bg = colors.black,
+  },
+
+  BufferLineFill = {
+    bg = colors.black2,
+  },
+
   BufferlineIndicatorSelected = {
-    fg = colors.black,
+    fg = colors.blue,
     bg = colors.black,
   },
 
@@ -60,10 +84,12 @@ return {
     fg = colors.red,
     bg = colors.black2,
   },
+
   BufferLineModifiedVisible = {
     fg = colors.red,
     bg = colors.black2,
   },
+
   BufferLineModifiedSelected = {
     fg = colors.green,
     bg = colors.black,
@@ -74,10 +100,12 @@ return {
     fg = colors.black2,
     bg = colors.black2,
   },
+
   BufferLineSeparatorVisible = {
     fg = colors.black2,
     bg = colors.black2,
   },
+
   BufferLineSeparatorSelected = {
     fg = colors.black2,
     bg = colors.black2,
@@ -85,16 +113,29 @@ return {
 
   -- tabs
   BufferLineTab = {
-    fg = colors.light_grey,
-    bg = colors.one_bg3,
+    fg = colors.white,
+    bg = colors.one_bg2,
   },
+
   BufferLineTabSelected = {
-    fg = colors.black2,
-    bg = colors.nord_blue,
+    fg = colors.black,
+    bg = colors.green,
+    bold = true,
   },
+
   BufferLineTabClose = {
     fg = colors.red,
     bg = colors.black,
+  },
+
+  BufferLineTabSeparator = {
+    fg = colors.one_bg2,
+    bg = colors.one_bg2,
+  },
+
+  BufferLineTabSeparatorSelected = {
+    fg = colors.green,
+    bg = colors.green,
   },
 
   BufferLineDevIconDefaultSelected = {
@@ -109,10 +150,12 @@ return {
     fg = "NONE",
     bg = colors.black2,
   },
+
   BufferLineDuplicateSelected = {
     fg = colors.red,
     bg = colors.black,
   },
+
   BufferLineDuplicateVisible = {
     fg = colors.blue,
     bg = colors.black2,
