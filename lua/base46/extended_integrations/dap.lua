@@ -1,129 +1,48 @@
 local colors = require("base46").get_theme_tb "base_30"
 
 return {
+  -- Dap
+  DapBreakpoint = { fg = colors.red },
+  DapBreakpointCondition = { fg = colors.yellow },
+  DapLogPoint = { fg = colors.cyan },
+  DapStopped = { fg = colors.baby_pink },
 
-  BufferLineBackground = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
+  -- DapUI
+  DAPUIScope = { fg = colors.cyan },
+  DAPUIType = { fg = colors.dark_purple },
+  DAPUIValue = { fg = colors.cyan },
+  DAPUIVariable = { fg = colors.white },
+  DapUIModifiedValue = { fg = colors.orange },
+  DapUIDecoration = { fg = colors.cyan },
+  DapUIThread = { fg = colors.green },
+  DapUIStoppedThread = { fg = colors.cyan },
+  DapUISource = { fg = colors.lavender },
+  DapUILineNumber = { fg = colors.cyan },
+  DapUIFloatBorder = { fg = colors.cyan },
 
-  BufferlineIndicatorVisible = {
-    fg = colors.black2,
-    bg = colors.black2,
-  },
+  DapUIWatchesEmpty = { fg = colors.baby_pink },
+  DapUIWatchesValue = { fg = colors.green },
+  DapUIWatchesError = { fg = colors.baby_pink },
 
-  -- buffers
-  BufferLineBufferSelected = {
-    fg = colors.white,
-    bg = colors.black,
-  },
+  DapUIBreakpointsPath = { fg = colors.cyan },
+  DapUIBreakpointsInfo = { fg = colors.green },
+  DapUIBreakPointsCurrentLine = { fg = colors.green, bold = true },
+  DapUIBreakpointsDisabledLine = { fg = colors.grey_fg2 },
 
-  BufferLineBufferVisible = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-
-  -- for diagnostics = "nvim_lsp"
-  BufferLineError = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-  BufferLineErrorDiagnostic = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-
-  -- close buttons
-  BufferLineCloseButton = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-  BufferLineCloseButtonVisible = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
-  BufferLineCloseButtonSelected = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-  BufferLineFill = {
-    fg = colors.grey_fg,
-    bg = colors.black2,
-  },
-  BufferlineIndicatorSelected = {
-    fg = colors.black,
-    bg = colors.black,
-  },
-
-  -- modified
-  BufferLineModified = {
-    fg = colors.red,
-    bg = colors.black2,
-  },
-  BufferLineModifiedVisible = {
-    fg = colors.red,
-    bg = colors.black2,
-  },
-  BufferLineModifiedSelected = {
-    fg = colors.green,
-    bg = colors.black,
-  },
-
-  -- separators
-  BufferLineSeparator = {
-    fg = colors.black2,
-    bg = colors.black2,
-  },
-  BufferLineSeparatorVisible = {
-    fg = colors.black2,
-    bg = colors.black2,
-  },
-  BufferLineSeparatorSelected = {
-    fg = colors.black2,
-    bg = colors.black2,
-  },
-
-  -- tabs
-  BufferLineTab = {
-    fg = colors.light_grey,
-    bg = colors.one_bg3,
-  },
-  BufferLineTabSelected = {
-    fg = colors.black2,
-    bg = colors.nord_blue,
-  },
-  BufferLineTabClose = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-
-  BufferLineDevIconDefaultSelected = {
-    bg = "none",
-  },
-
-  BufferLineDevIconDefaultInactive = {
-    bg = "none",
-  },
-
-  BufferLineDuplicate = {
-    fg = "NONE",
-    bg = colors.black2,
-  },
-  BufferLineDuplicateSelected = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-  BufferLineDuplicateVisible = {
-    fg = colors.blue,
-    bg = colors.black2,
-  },
-
-  -- custom area
-  BufferLineRightCustomAreaText1 = {
-    fg = colors.white,
-  },
-
-  BufferLineRightCustomAreaText2 = {
-    fg = colors.red,
-  },
+  DapUIStepOver = { fg = colors.blue },
+  DapUIStepOverNC = { fg = colors.blue },
+  DapUIStepInto = { fg = colors.blue },
+  DapUIStepIntoNC = { fg = colors.blue },
+  DapUIStepBack = { fg = colors.blue },
+  DapUIStepBackNC = { fg = colors.blue },
+  DapUIStepOut = { fg = colors.blue },
+  DapUIStepOutNC = { fg = colors.blue },
+  DapUIStop = { fg = colors.red },
+  DapUIStopNC = { fg = colors.red },
+  DapUIPlayPause = { fg = colors.green },
+  DapUIPlayPauseNC = { fg = colors.green },
+  DapUIRestart = { fg = colors.green },
+  DapUIRestartNC = { fg = colors.green },
+  DapUIUnavailable = { fg = colors.grey_fg },
+  DapUIUnavailableNC = { fg = colors.grey_fg },
 }
