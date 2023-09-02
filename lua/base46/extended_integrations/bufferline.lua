@@ -275,4 +275,12 @@ return {
     fg = colors.darker_black,
     bg = colors.darker_black,
   },
+
+  BufferLineDevIconDefaultSelected = {
+    bg = "none",
+  },
+
+  BufferLineDevIconDefaultInactive = {
+    bg = "none",
+  },
 }
