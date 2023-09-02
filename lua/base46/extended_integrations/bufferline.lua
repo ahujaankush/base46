@@ -40,6 +40,10 @@ return {
     fg = colors.baby_pink,
     bg = colors.black,
   },
+  BufferLineBuffer = {
+    fg = colors.light_grey,
+    bg = colors.black2,
+  },
   BufferLineBufferVisible = {
     fg = colors.light_grey,
     bg = colors.black2,
