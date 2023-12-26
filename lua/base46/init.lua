@@ -180,7 +180,7 @@ M.toggle_theme = function()
     vim.notify(
       "Set your current theme to one of those mentioned in the theme_toggle table (comparing "
         .. theme1
-        .. "and "
+        .. " and "
         .. theme2
         .. " with "
         .. g.nvchad_theme
