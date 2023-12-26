@@ -3,6 +3,17 @@ local g = vim.g
 local config = require("core.utils").load_config()
 local base46_path = vim.fn.fnamemodify(debug.getinfo(1, "S").source:sub(2), ":p:h")
 
+local function replace_word(old, new)
+  local chadrc = vim.fn.stdpath "config" .. "/lua/custom/" .. "chadrc.lua"
+  local file = io.open(chadrc, "r")
+  local added_pattern = string.gsub(old, "-", "%%-") -- add % before - if exists
+  local new_content = file:read("*all"):gsub(added_pattern, new)
+
+  file = io.open(chadrc, "w")
+  file:write(new_content)
+  file:close()
+end
+
 M.get_theme_tb = function(type)
   local default_path = "base46.themes." .. g.nvchad_theme
   local user_path = "custom.themes." .. g.nvchad_theme
@@ -181,11 +192,11 @@ M.toggle_theme = function()
   if g.nvchad_theme == theme1 then
     g.toggle_theme_icon = "   "
     vim.g.nvchad_theme = theme2
-    require("nvchad").replace_word('theme = "' .. theme1, 'theme = "' .. theme2)
+    replace_word('theme = "' .. theme1, 'theme = "' .. theme2)
   else
     vim.g.nvchad_theme = theme1
     g.toggle_theme_icon = "   "
-    require("nvchad").replace_word('theme = "' .. theme2, 'theme = "' .. theme1)
+    replace_word('theme = "' .. theme2, 'theme = "' .. theme1)
   end
 
   M.load_all_highlights()
