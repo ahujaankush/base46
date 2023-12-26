@@ -165,8 +165,8 @@ M.toggle_theme = function()
   local theme1 = themes[1]
   local theme2 = themes[2]
 
-  if g.nvchad_theme ~= theme1 or g.nvchad_theme ~= theme2 then
-    vim.notify "Set your current theme to one of those mentioned in the theme_toggle table (chadrc)"
+  if g.nvchad_theme ~= theme1 and g.nvchad_theme ~= theme2 then
+    vim.notify "Set your current theme to one of those mentioned in the theme_toggle table (comparing)"
     return
   end
 
