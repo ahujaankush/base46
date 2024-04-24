@@ -5,4 +5,5 @@ return {
   IndentBlanklineSpaceChar = { fg = colors.line },
   IndentBlanklineContextChar = { fg = colors.grey },
   IndentBlanklineContextStart = { bg = colors.one_bg2 },
+  ["@ibl.scope.underline.1"] = { bg = colors.black2 },
 }
