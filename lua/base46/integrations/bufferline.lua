@@ -4,18 +4,18 @@ return {
 
   BufferLineBackground = {
     fg = colors.light_grey,
-    bg = colors.black2,
+    bg = colors.black,
   },
 
   BufferlineIndicatorVisible = {
-    fg = colors.black2,
-    bg = colors.black2,
+    fg = colors.black,
+    bg = colors.black,
   },
 
   -- buffers
   BufferLineBufferSelected = {
-    fg = colors.white,
-    bg = colors.black,
+    fg = colors.black,
+    bg = colors.nord_blue,
   },
 
   BufferLineBufferVisible = {
@@ -26,11 +26,11 @@ return {
   -- for diagnostics = "nvim_lsp"
   BufferLineError = {
     fg = colors.light_grey,
-    bg = colors.black2,
+    bg = "NONE",
   },
   BufferLineErrorDiagnostic = {
     fg = colors.light_grey,
-    bg = colors.black2,
+    bg = "NONE",
   },
 
   -- close buttons
@@ -44,13 +44,13 @@ return {
   },
   BufferLineCloseButtonSelected = {
     fg = colors.red,
-    bg = colors.black,
+    bg = colors.nord_blue,
   },
   BufferLineFill = {
     fg = colors.grey_fg,
-    bg = colors.black2,
+    bg = colors.black,
   },
-  BufferlineIndicatorSelected = {
+  BufferLineIndicatorSelected = {
     fg = colors.black,
     bg = colors.black,
   },
@@ -66,31 +66,31 @@ return {
   },
   BufferLineModifiedSelected = {
     fg = colors.green,
-    bg = colors.black,
+    bg = colors.nord_blue,
   },
 
   -- separators
   BufferLineSeparator = {
-    fg = colors.black2,
-    bg = colors.black2,
+    fg = colors.black,
+    bg = colors.black,
   },
   BufferLineSeparatorVisible = {
     fg = colors.black2,
     bg = colors.black2,
   },
   BufferLineSeparatorSelected = {
-    fg = colors.black2,
-    bg = colors.black2,
+    fg = colors.nord_blue,
+    bg = colors.nord_blue,
   },
 
   -- tabs
   BufferLineTab = {
     fg = colors.light_grey,
-    bg = colors.one_bg3,
+    bg = colors.black2,
   },
   BufferLineTabSelected = {
-    fg = colors.black2,
-    bg = colors.nord_blue,
+    fg = colors.nord_blue,
+    bg = colors.black,
   },
   BufferLineTabClose = {
     fg = colors.red,
@@ -98,11 +98,11 @@ return {
   },
 
   BufferLineDevIconDefaultSelected = {
-    bg = "none",
+    bg = "NONE",
   },
 
   BufferLineDevIconDefaultInactive = {
-    bg = "none",
+    bg = "NONE",
   },
 
   BufferLineDuplicate = {
@@ -111,19 +111,10 @@ return {
   },
   BufferLineDuplicateSelected = {
     fg = colors.red,
-    bg = colors.black,
+    bg = colors.nord_blue,
   },
   BufferLineDuplicateVisible = {
     fg = colors.blue,
     bg = colors.black2,
-  },
-
-  -- custom area
-  BufferLineRightCustomAreaText1 = {
-    fg = colors.white,
-  },
-
-  BufferLineRightCustomAreaText2 = {
-    fg = colors.red,
   },
 }
